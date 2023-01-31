@@ -42,7 +42,14 @@ h1, p {
   font-size: 20px;
 }
 
+@font-face {
+  font-family: ocean;
+  src: url(./fonts/OCEAN\ WAVE.ttf);
+}
 
+h1 {
+  font-family: ocean;
+}
 
 
 
