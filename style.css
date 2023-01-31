@@ -20,10 +20,12 @@ h1, p {
 }
 
 .spot {
-  border: 5px solid black;
+  border: 5px solid rgb(30, 216, 249);
   display: flex;
   min-width: 200px;
   min-height: 200px;
+  background-color:rgba(0,0,0,.8)
+  /* opacity: 50%; */
   /* align-items : left;
   justify-content: left; */
   /* font-size: 50px; */ 
@@ -44,11 +46,12 @@ h1, p {
 
 @font-face {
   font-family: ocean;
-  src: url(./fonts/OCEAN\ WAVE.ttf);
+  src: url(./fonts/Blue\ Ocean.ttf);
 }
 
 h1 {
   font-family: ocean;
+  font-size: 60px;
 }
 
 
