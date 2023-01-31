@@ -61,16 +61,16 @@ h1, p {
 
 h1 {
   font-family: ocean;
-  font-size: 50px;
+  font-size: 54px;
   letter-spacing: 6px;
   text-shadow: 2px 2px 7px black;
 }
 
 p {
   font-family: ocean;
-  font-size: 25px;
-  letter-spacing: 2px;
-  text-shadow: 2px 2px 7px black;
+  font-size: 28px;
+  letter-spacing: 3px;
+  text-shadow: 2px 2px 9px black;
 }
 
 .whale1 {
