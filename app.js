@@ -2,12 +2,19 @@
 
 
 
-// WHALE FUNCTION 
+// CALLING BUTTONS AND UPDATING THEM
 
-console.log("Before Whale Button")
-let whaleButton = document.querySelector(".playSpot1")
+console.log("Before Buttons")
 
-whaleButton.addEventListener("click", whaleClick)
+let buttons = Array.from(document.getElementsByClassName("spot"))
+
+// turned my buttons into an array 
+
+console.log(buttons)
+
+
+
+buttons.addEventListener("click", whaleClick)
 
 function whaleClick() {
   document.getElementById("playSpot1").src = "assets/whale-g69f6c2238_1280.png"
@@ -28,9 +35,11 @@ function whaleClick() {
 
 // RE-LOAD PAGE WHEN GAME IS OVER
 
-let resetButton = document.querySelector(".restart")
+let restartButton = document.getElementsByClassName("restart")
 
-resetButton.addEventListener("click", pageReLoad)
+console.log(restartButton)
+
+restartButton.addEventListener("click", pageReLoad)
 
 function pageReLoad() {
   location.reload()
