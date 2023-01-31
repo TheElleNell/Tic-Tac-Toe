@@ -69,18 +69,23 @@ firstClick()
 
 // RE-LOAD PAGE WHEN GAME IS OVER
 
-// let restartButton = document.getElementsByClassName("restart")
+let buttons1 = document.querySelectorAll(".spot")
 
-// console.log(restartButton)
+let restartButton = document.querySelector(".restart")
 
-// restartButton.addEventListener("click", pageReLoad)
+restartButton.addEventListener("click", pageReLoad)
 
-// function pageReLoad() {
-//   location.reload()
-// console.log(pageReLoad)
+function pageReLoad() {
+  // alert("did this work")
+  window.location.reload();
 
-// }
-// console.log(pageReLoad)
+}
+
+
+
+console.log(buttons1)
+console.log(pageReLoad)
+
 
 
 
@@ -88,6 +93,18 @@ firstClick()
 // _________________________________
 
 // NOTES:
+
+
+// let restartButton = document.getElementsByClassName("restart")
+
+// console.log(restartButton)
+
+// // restartButton.addEventListener("click", pageReLoad)
+
+// // let buttons1 = Array.from(document.getElementsByClassName("spot"))
+// let game = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+
+// loop through the board spots
 
 // function firstClick(click){
 //   const playNow = click.target
