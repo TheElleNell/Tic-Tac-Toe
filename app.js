@@ -14,17 +14,18 @@ console.log(buttons)
 
 // establishing players
 
-let player1 = "whale"
+let player1 = true
 
-let player2 = "turtle"
+let player2 = true
+
+
 
 
 // establishing the board
 
-let game = ["", "", "", "", "", "", "", "", ""]
 
 
-
+   
 
 // buttons.addEventListener("click", whaleClick)
 
@@ -44,8 +45,10 @@ function firstClick() {
     })
   })
   }
-  
-console.log(firstClick)
+
+console.log(firstClick())
+
+firstClick()
 
 
   document.getElementById("playSpot1").src = "assets/whale-g69f6c2238_1280.png"
@@ -78,3 +81,35 @@ console.log(firstClick)
 
 // }
 // console.log(pageReLoad)
+
+
+
+
+// _________________________________
+
+// NOTES:
+
+// function firstClick(click){
+//   const playNow = click.target
+
+// }
+
+// let game = ["", "", "", "", "", "", "", "", ""]
+
+
+
+// function startWhale() {
+//   let buttons = (document.querySelector(".spot"))
+
+//   console.log(buttons)
+
+//   buttons.addEventListener("click", firstClick, {once: true})
+
+
+
+
+
+// }
+
+// console.log(startWhale())
+// startWhale()
