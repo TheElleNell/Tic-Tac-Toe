@@ -18,6 +18,7 @@ console.log(buttons)
 
 // let player2 = true
 
+// CREATING MY PLAYER CLASS
 
 class Player {
   constructor(name, score) {
@@ -27,7 +28,7 @@ class Player {
   }
 }
 
-// PLAYER 
+// MY PLAYER 
 const Whale = new Player('Whale')
 
 console.log(Whale)
@@ -44,7 +45,6 @@ console.log(Whale.score)
 console.log("Before score", Whale)
 
 function firstClick() {
-  // Whale.score += 1
 
   console.log("After", Whale.score)
   let buttons = Array.from(document.getElementsByClassName("spot"))
@@ -59,6 +59,7 @@ function firstClick() {
       Whale.score += 1
       console.log(buttons)
       console.log(Whale.score)
+      // IF STATEMENT TO KEEP SCORE
       if (Whale.score === 1){
        }
        else if (Whale.score === 3){
@@ -85,18 +86,13 @@ else if (Whale.score === 8){
     })
   })
 
-
+}
 
 // if (player1 === 1){
 //     firstClick()
 //   }
 // else {
 //   secondClick()
-}
-
-
-
-
 
 
 
@@ -108,7 +104,6 @@ console.log(Whale.score)
 console.log(Whale.score)
 
 // THE SECOND CLICK
-
 
 
 // console.log(secondClick())
@@ -123,15 +118,10 @@ console.log(Whale.score)
 
 // WINNING THE GAME
 
-function winning() {
+// function winning() {
 
 
-}
-
-
-
-
-// CLICK EVENTS
+// }
 
 
 
@@ -149,12 +139,8 @@ function pageReLoad() {
 
 }
 
-
-
 console.log(buttons1)
 console.log(pageReLoad)
-
-
 
 
 
