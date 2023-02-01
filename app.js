@@ -118,10 +118,18 @@ console.log(Whale.score)
 
 // WINNING THE GAME
 
-// function winning() {
+function winning() {
+  let buttons = (document.getElementsByClassName("spot"))
+  if (buttons.playSpot1.spot === " "){
+    alert("player 1 won")
+  }
+  // else if (Whale.score === 3){
+  //  buttons[place].classList.add("player1")
+  // }
 
+}
 
-// }
+winning()
 
 
 
