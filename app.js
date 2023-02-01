@@ -1,5 +1,13 @@
 // Eleanor Brow Tic-Tac-Toe Game
 
+// 
+// ask paul
+// x player won
+// music 
+// arrow near words
+
+
+
 
 // CALLING BUTTONS AND UPDATING THEM
 
@@ -119,10 +127,10 @@ console.log(Whale.score)
 // WINNING THE GAME
 
 function winning() {
-  let buttons = (document.getElementsByClassName("spot"))
-  if (buttons.playSpot1.spot === " "){
-    alert("player 1 won")
-  }
+  let button1 = (document.querySelector("#playSpot1"))
+  // if (button1 === ){
+  //   alert("player 1 won")
+  // }
   // else if (Whale.score === 3){
   //  buttons[place].classList.add("player1")
   // }
@@ -149,6 +157,21 @@ function pageReLoad() {
 
 console.log(buttons1)
 console.log(pageReLoad)
+
+
+// MUSIC
+
+// let music = document.querySelector("#music")
+
+// music.addEventListener("click", playMusic)
+
+// function playMusic() {
+//   music.play()
+// }
+
+// function pauseMusic() {
+//   music.pause()
+// }
 
 
 
