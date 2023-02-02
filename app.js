@@ -44,8 +44,6 @@ console.log(Whale)
 console.log(Whale.score)
 
 
-// establishing the board
-
 
 
 // THE FIRST CLICK 
@@ -57,6 +55,7 @@ function firstClick() {
   console.log("After", Whale.score)
   let buttons = Array.from(document.getElementsByClassName("spot"))
   let game = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+  let button1 = (document.querySelector("#playSpot1"))
 
   // loop through the board spots
 
@@ -91,10 +90,112 @@ function firstClick() {
 else if (Whale.score === 8){
   buttons[place].classList.add("player2")
 }
+
+else if (Whale.score === 9){
+  buttons[place].classList.add("player1")
+  alert("The game ends in a tie!!! Click 'Restart Game' to play again")
+}
+
+
     })
+
+    winning1()
   })
 
 }
+
+
+// establishing the winner
+
+// LOOP OVER THIS ARRAY
+
+let winningOptions = [
+["playSpot1", "playSpot2", "playSpot3"]
+["playSpot4", "playSpot5", "playSpot6"]
+// ["playSpot7", "playSpot8", "playSpot8"]
+// ["playSpot1", "playSpot4", "playSpot7"]
+// ["playSpot2", "playSpot5", "playSpot8"]
+// ["playSpot3", "playSpot6", "playSpot8"]
+// ["playSpot1", "playSpot5", "playSpot8"]
+// ["playSpot3", "playSpot5", "playSpot7"]
+]
+
+function winning1() {
+  let buttons = Array.from(document.getElementsByClassName("spot"))
+  for(let i = 0; i <= 0; i++){
+    let a = buttons[winningOptions[0]]
+    let b = buttons[winningOptions[1]]
+    let c = buttons[winningOptions[2]]
+    if (a === "" || b === "" || c === ""){
+      alert("winning")
+    }
+  }
+}
+
+winning1()
+
+
+
+
+// function playerWon() {
+//   let buttons = Array.from(document.getElementsByClassName("spot"))
+//   for(let condition of winningOptions){
+//     let [a, b, c] = condition
+
+//     if (buttons[a] && (buttons[a] == buttons[b] && buttons[a] == buttons[c])){
+//       return alert("working")
+//     }
+//   }
+// }
+// playerWon()
+
+
+function winGame() {
+  let button1 = (document.querySelector("#playSpot1"))
+  console.log(button1)
+  let board = (document.querySelector(".board"))
+  if (button1.onclick === true)
+  alert("Whale wins")
+
+
+}
+winGame()
+
+
+// function secondClick() {
+
+//   console.log("After", Whale.score)
+//   let buttons = Array.from(document.getElementsByClassName("spot"))
+//   let button1 = (document.querySelector("#playSpot1"))
+//   // if (button1 === "click"){
+//   //   alert("player 1 won")
+//   // }
+
+//   // loop through the board spots
+
+//   buttons.forEach(button => {
+//     button.addEventListener("click", (click) => {
+//       let place = buttons.indexOf(click.target)
+//       buttons[place].classList.add("player1")
+//       Whale.score += 1
+//       console.log(buttons)
+//       console.log(Whale.score)
+//       // IF STATEMENT TO KEEP SCORE
+//       if (button1 === "click"){
+//         alert("player 1 wins")
+//        }
+//       //  else if (Whale.score === 3){
+//       //   buttons[place].classList.add("player1")
+//       //  }
+
+
+//     })
+//   })
+
+// }
+
+// secondClick()
+// console.log(secondClick())
 
 // if (player1 === 1){
 //     firstClick()
@@ -126,18 +227,18 @@ console.log(Whale.score)
 
 // WINNING THE GAME
 
-function winning() {
-  let button1 = (document.querySelector("#playSpot1"))
-  // if (button1 === ){
-  //   alert("player 1 won")
-  // }
-  // else if (Whale.score === 3){
-  //  buttons[place].classList.add("player1")
-  // }
+// function winning() {
+//   let button1 = (document.querySelector("#playSpot1"))
+//   // if (button1 === "click"){
+//   //   alert("player 1 won")
+//   // }
+//   // else if (Whale.score === 3){
+//   //  buttons[place].classList.add("player1")
+//   // }
 
-}
+// }
 
-winning()
+// winning()
 
 
 
