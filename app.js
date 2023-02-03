@@ -96,10 +96,14 @@ else if (Whale.score === 9){
   alert("The game ends in a tie!!! Click 'Restart Game' to play again")
 }
 
+else if (buttons.innerText.trim() === ""){
+  alert("youtube")
+}
+
 
     })
 
-    winning1()
+    // winning1()
   })
 
 }
@@ -109,30 +113,71 @@ else if (Whale.score === 9){
 
 // LOOP OVER THIS ARRAY
 
-let winningOptions = [
-["playSpot1", "playSpot2", "playSpot3"]
-["playSpot4", "playSpot5", "playSpot6"]
+// let winningOptions = [
+// ["playSpot1", "playSpot2", "playSpot3"]
+// ["playSpot4", "playSpot5", "playSpot6"]
 // ["playSpot7", "playSpot8", "playSpot8"]
 // ["playSpot1", "playSpot4", "playSpot7"]
 // ["playSpot2", "playSpot5", "playSpot8"]
 // ["playSpot3", "playSpot6", "playSpot8"]
 // ["playSpot1", "playSpot5", "playSpot8"]
 // ["playSpot3", "playSpot5", "playSpot7"]
-]
+// ]
 
-function winning1() {
-  let buttons = Array.from(document.getElementsByClassName("spot"))
-  for(let i = 0; i <= 0; i++){
-    let a = buttons[winningOptions[0]]
-    let b = buttons[winningOptions[1]]
-    let c = buttons[winningOptions[2]]
-    if (a === "" || b === "" || c === ""){
-      alert("winning")
-    }
+// let winningCombinations = [
+//   [0, 1, 2]
+//   [3, 4, 5]
+//   [6, 7, 8]
+//   [0, 3, 6]
+//   [1, 4, 7]
+//   [2, 5, 8]
+//   [0, 4, 8]
+//   [2, 4, 6]
+//   ]
+
+  
+// function winningAnother() {
+//  if (buttons.classList.contains("player1") === true)
+//   alert("hi")
+
+// }
+
+
+// winningAnother()
+
+
+
+// function winning1() {
+  //   winningCombinations.forEach(function())
+  //   let combo = 
+  //   if(check)
+  //     alert("i think it won")
+
+  //     }
+
+
+  function winner12() {
+
+
+
   }
-}
+    
 
-winning1()
+
+
+// function winning1() {
+//   let buttons = Array.from(document.getElementsByClassName("spot"))
+//   for(let i = 0; i <= 0; i++){
+//     let a = buttons[winningOptions[0]]
+//     let b = buttons[winningOptions[1]]
+//     let c = buttons[winningOptions[2]]
+//     if (a === "" || b === "" || c === ""){
+//       alert("winning")
+//     }
+//   }
+// }
+
+// winning1()
 
 
 
