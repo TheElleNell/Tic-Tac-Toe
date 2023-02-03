@@ -57,7 +57,10 @@ function firstClick() {
   let buttons = Array.from(document.getElementsByClassName("spot"))
   let game = [1, 2, 3, 4, 5, 6, 7, 8, 9]
   let button1 = (document.querySelector("#playSpot1"))
-
+  let spot1 = (document.getElementById("playSpot1"))
+  let spot4 = (document.getElementById("playSpot4"))
+  let spot7 = (document.getElementById("playSpot7"))
+  let blue = "#0d2075"
   // loop through the board spots
 
   buttons.forEach(button => {
@@ -87,6 +90,10 @@ function firstClick() {
  }
  else if (Whale.score === 7){
   buttons[place].classList.add("player1")
+  spot1.style.backgroundColor = blue
+  spot4.style.backgroundColor = blue
+  spot7.style.backgroundColor = blue
+  alert("WHALE WON")
 }
 else if (Whale.score === 8){
   buttons[place].classList.add("player2")
@@ -97,16 +104,21 @@ else if (Whale.score === 9){
   alert("The game ends in a tie!!! Click 'Restart Game' to play again")
 }
 
-else if (buttons.innerText.trim() === ""){
-  alert("youtube")
-}
+// else if (buttons.innerText.trim() === ""){
+//   alert("youtube")
+// }
 
+// else if (Whale.score === 7) {
+// alert("working")
+
+// console.log(spot1)
+// }
 
     })
 
-    // winning1()
+    winningAnother1()
   })
-
+  winningAnother1()
 }
 
 
@@ -136,24 +148,24 @@ else if (buttons.innerText.trim() === ""){
 //   [2, 4, 6]
 //   ]
 
-// let spot1 = (document.querySelector("playSpot1"))
+let spot1 = (document.getElementById("playSpot1"))
 
-// console.log(spot1)
+console.log(spot1)
 
-// function winningAnother1() {
+function winningAnother1() {
 
-// if (spot1.spot.player1 === "playSpot1.spot.player1")
-// alert("working")
+if (spot1.className === "spot player1")
+alert("working")
 
+console.log(spot1)
+// let buttons = (document.getElementsByClassName("spot"))
+//  if (buttons[0].children === "player1")
+//   alert("hi")
 
-// // let buttons = (document.getElementsByClassName("spot"))
-// //  if (buttons[0].children === "player1")
-// //   alert("hi")
+}
 
-// }
-
-
-// winningAnother1()
+// console.log(winningAnother1())
+winningAnother1()
   
 // function winningAnother() {
 //  if (buttons.classList.contains("player1") === true)
@@ -181,7 +193,7 @@ else if (buttons.innerText.trim() === ""){
 
   }
     
-
+  console.log(spot1)
 
 
 // function winning1() {
