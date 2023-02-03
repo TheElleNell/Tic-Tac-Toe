@@ -1,31 +1,15 @@
 // Eleanor Brow Tic-Tac-Toe Game
 
-// 
-// ask paul
-// x player won
-// arrow near words
-// leaving 
-// pages 
-
-
-
 
 // CALLING BUTTONS AND UPDATING THEM
-
-// turning my buttons into an array 
 
 console.log("Before Buttons")
 
 let buttons = Array.from(document.getElementsByClassName("spot"))
+// turning my buttons into an array 
 
 console.log(buttons)
 
-
-// establishing players
-
-// let player1 = 1
-
-// let player2 = true
 
 // CREATING MY PLAYER CLASS
 
@@ -37,7 +21,7 @@ class Player {
   }
 }
 
-// MY PLAYER 
+// MY PLAYER BELOW
 const Whale = new Player('Whale')
 
 console.log(Whale)
@@ -46,10 +30,9 @@ console.log(Whale.score)
 
 
 
+// THE MAIN CLICK / FUNCTION
 
-// THE FIRST CLICK 
-
-console.log("Before score", Whale)
+console.log("Before score", Whale) // CONSOLING BEFORE 
 
 function firstClick() {
 
@@ -90,10 +73,10 @@ function firstClick() {
  }
  else if (Whale.score === 7){
   buttons[place].classList.add("player1")
-  spot1.style.backgroundColor = blue
-  spot4.style.backgroundColor = blue
-  spot7.style.backgroundColor = blue
-  alert("WHALE WON")
+  // spot1.style.backgroundColor = blue
+  // spot4.style.backgroundColor = blue
+  // spot7.style.backgroundColor = blue
+  // alert("WHALE WON")
 }
 else if (Whale.score === 8){
   buttons[place].classList.add("player2")
@@ -187,11 +170,11 @@ winningAnother1()
   //     }
 
 
-  function winner12() {
+  // function winner12() {
 
 
 
-  }
+  // }
     
   console.log(spot1)
 
@@ -270,6 +253,24 @@ winGame()
 
 // }
 
+
+// RE-SETTING PAGE WHEN GAME IS OVER
+
+let buttons1 = document.querySelectorAll(".spot")
+
+let restartButton = document.querySelector(".restart")
+
+restartButton.addEventListener("click", pageReLoad)
+
+function pageReLoad() {
+  alert("The game will now reset")
+  window.location.reload();
+
+}
+
+console.log(buttons1)
+console.log(pageReLoad)
+
 // secondClick()
 // console.log(secondClick())
 
@@ -316,24 +317,6 @@ console.log(Whale.score)
 
 // winning()
 
-
-
-// RE-LOAD PAGE WHEN GAME IS OVER
-
-let buttons1 = document.querySelectorAll(".spot")
-
-let restartButton = document.querySelector(".restart")
-
-restartButton.addEventListener("click", pageReLoad)
-
-function pageReLoad() {
-  alert("The game will now reset")
-  window.location.reload();
-
-}
-
-console.log(buttons1)
-console.log(pageReLoad)
 
 
 // MUSIC
