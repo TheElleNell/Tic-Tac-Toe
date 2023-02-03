@@ -3,8 +3,9 @@
 // 
 // ask paul
 // x player won
-// music 
 // arrow near words
+// leaving 
+// pages 
 
 
 
@@ -135,6 +136,24 @@ else if (buttons.innerText.trim() === ""){
 //   [2, 4, 6]
 //   ]
 
+// let spot1 = (document.querySelector("playSpot1"))
+
+// console.log(spot1)
+
+// function winningAnother1() {
+
+// if (spot1.spot.player1 === "playSpot1.spot.player1")
+// alert("working")
+
+
+// // let buttons = (document.getElementsByClassName("spot"))
+// //  if (buttons[0].children === "player1")
+// //   alert("hi")
+
+// }
+
+
+// winningAnother1()
   
 // function winningAnother() {
 //  if (buttons.classList.contains("player1") === true)
