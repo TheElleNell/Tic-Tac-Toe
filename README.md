@@ -26,3 +26,9 @@ My game is tic tac toe where two players can try to get 3 in a row on a board. E
 * For both players, I want to be able to win the game by getting three in a row of my animal.
 
 * I want the game to be able to notify the players when the game is over and a specific player wins.
+
+**Project Links**
+
+GitHub Repository Link: https://github.com/TheElleNell/Tic-Tac-Toe
+
+GitHub Pages Link: https://theellenell.github.io/Tic-Tac-Toe/
